@@ -1,21 +1,26 @@
 import time
 from random import randint
-comp = ('PEDRA','PAPEL', 'TESOURA')
-jogo = randint(0,2)
+
+comp = ('PEDRA', 'PAPEL', 'TESOURA')
+jogo = randint(0, 2)
+
 print('''Suas opções:
 [ 0 ] PEDRA
 [ 1 ] PAPEL
 [ 2 ] TESOURA''')
-jogada = int(input('Qual é sua jogada? '))
+jogada = int(input('Qual é a sua jogada? '))
+
 print('JO')
 time.sleep(1)
 print('KEN')
 time.sleep(1)
 print('POOH!!')
+
 print('-='*20)
 print('O computador escolheu {}'.format(comp[jogo]))
 print('O jogador escolheu {}'.format(comp[jogada]))
 print('-='*20)
+
 if jogo == 0:
     if jogada == 0:
         print('EMPATE!!')
@@ -45,7 +50,7 @@ if jogo == 2:
         print('EMPATE!!')
     else:
         print('operação invalida')
-
 else:
     print('operação invalida')
+
 
